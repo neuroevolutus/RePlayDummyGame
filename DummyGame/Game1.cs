@@ -12,6 +12,8 @@ namespace DummyGame.Android
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        Texture2D temoc;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -44,6 +46,8 @@ namespace DummyGame.Android
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            temoc = Content.Load<Texture2D>("temoc");
 
             // TODO: use this.Content to load your game content here
         }
@@ -78,9 +82,9 @@ namespace DummyGame.Android
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.Red);
+            GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            spriteBatch.Draw(temoc, Vector2.Zero, Color.White);
 
             base.Draw(gameTime);
         }
