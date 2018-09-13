@@ -84,7 +84,9 @@ namespace DummyGame.Android
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+            spriteBatch.Begin();
             spriteBatch.Draw(temoc, Vector2.Zero, Color.White);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
