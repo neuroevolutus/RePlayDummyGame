@@ -14,10 +14,10 @@ namespace DummyGame.Android
 
         Texture2D temoc;
 
-        public Game1()
+        public Game1(string contentDir = "Content")
         {
             graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";
+            Content.RootDirectory = contentDir;
 
             graphics.IsFullScreen = true;
             graphics.PreferredBackBufferWidth = 800;

@@ -15,10 +15,17 @@ namespace DummyGame.Android
         , ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.Keyboard | ConfigChanges.KeyboardHidden | ConfigChanges.ScreenSize)]
     public class Activity1 : Microsoft.Xna.Framework.AndroidGameActivity
     {
+        private string contentDir;
+
+        public Activity1(string contentDir = "Content")
+        {
+            this.contentDir = contentDir;
+        }
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            var g = new Game1();
+            var g = new Game1(contentDir);
             SetContentView((View)g.Services.GetService(typeof(View)));
             g.Run();
         }
