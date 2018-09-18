@@ -29,5 +29,16 @@ namespace DummyGame.Android
             SetContentView((View)g.Services.GetService(typeof(View)));
             g.Run();
         }
+
+        //BACK BUTTON
+        public override bool OnKeyDown(Keycode keyCode, KeyEvent e)
+        {
+            if (keyCode == Keycode.Back)
+            {
+                this.Finish();
+                return true;
+            }
+            return base.OnKeyDown(keyCode, e);
+        }
     }
 }
