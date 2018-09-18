@@ -28,6 +28,7 @@ namespace DummyGame.Android
             var g = new Game1(contentDir);
             SetContentView((View)g.Services.GetService(typeof(View)));
             g.Run();
+            this.Finish();
         }
 
         //BACK BUTTON
@@ -35,7 +36,6 @@ namespace DummyGame.Android
         {
             if (keyCode == Keycode.Back)
             {
-                this.Finish();
                 return true;
             }
             return base.OnKeyDown(keyCode, e);
