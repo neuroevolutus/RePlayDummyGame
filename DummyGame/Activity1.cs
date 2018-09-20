@@ -30,9 +30,8 @@ namespace DummyGame.Android
             g.Run();
         }
 
-        protected override bool OnBackButtonPressed()
+        protected override bool OnBackPressed()
         {
-            base.OnBackButtonPressed();
             this.Finish();
         }
     }
