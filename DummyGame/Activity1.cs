@@ -28,7 +28,6 @@ namespace DummyGame.Android
             var g = new Game1(contentDir);
             SetContentView((View)g.Services.GetService(typeof(View)));
             g.Run();
-            this.Finish();
         }
 
         protected override bool OnBackButtonPressed()
