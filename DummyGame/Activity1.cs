@@ -31,14 +31,9 @@ namespace DummyGame.Android
             this.Finish();
         }
 
-        //BACK BUTTON
-        public override bool OnKeyDown(Keycode keyCode, KeyEvent e)
+        protected override bool OnBackButtonPressed()
         {
-            if (keyCode == Keycode.Back)
-            {
-                return true;
-            }
-            return base.OnKeyDown(keyCode, e);
+            base.OnBackButtonPressed();
         }
     }
 }
