@@ -1,4 +1,4 @@
-using Android.App;
+ing Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Views;
@@ -14,7 +14,8 @@ namespace DummyGame.Android
         , ScreenOrientation = ScreenOrientation.FullUser
         , ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.Keyboard | ConfigChanges.KeyboardHidden | ConfigChanges.ScreenSize)]
     public class Activity1 : Microsoft.Xna.Framework.AndroidGameActivity
-    {              
+    {
+        Game1 g;
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -32,6 +33,7 @@ namespace DummyGame.Android
 
         protected override bool onBackPressed()
         {
+            g.Exit();
             this.Finish();
         }
     }
