@@ -32,12 +32,5 @@ namespace DummyGame.Android
             g.Run();
         }
 
-        @override
-        protected void onBackPressed()
-        {
-            System.Console.WriteLine("I'm here.");
-            g.Exit();
-            Finish();
-        }
-    }
+
 }
