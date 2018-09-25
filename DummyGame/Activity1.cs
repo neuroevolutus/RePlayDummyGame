@@ -35,7 +35,7 @@ namespace DummyGame.Android
         @override
         protected void onBackPressed()
         {
-            Log("Abel", "I'm here.");
+            System.Console.WriteLine("I'm here.");
             g.Exit();
             Finish();
         }
