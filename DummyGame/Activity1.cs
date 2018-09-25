@@ -37,7 +37,7 @@ namespace DummyGame.Android
         {
             Log("Abel", "I'm here.");
             g.Exit();
-            this.Finish();
+            Finish();
         }
     }
 }
