@@ -31,7 +31,8 @@ namespace DummyGame.Android
             g.Run();
         }
 
-        protected override bool onBackPressed()
+        @override
+        protected void onBackPressed()
         {
             System.Diagnostic.Debug.WriteLine("I'm here.");
             g.Exit();
