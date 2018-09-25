@@ -1,7 +1,8 @@
-ing Android.App;
+using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Views;
+using Android.Util;
 
 namespace DummyGame.Android
 {
@@ -34,7 +35,7 @@ namespace DummyGame.Android
         @override
         protected void onBackPressed()
         {
-            System.Diagnostic.Debug.WriteLine("I'm here.");
+            Log("Abel", "I'm here.");
             g.Exit();
             this.Finish();
         }
