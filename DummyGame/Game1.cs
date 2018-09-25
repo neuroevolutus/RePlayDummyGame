@@ -68,6 +68,11 @@ namespace DummyGame.Android
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            for (int i = 0; i < 50; i++)
+            {
+                Update
+                    System.Console.WriteLine("I'm in the Update method nii-san.");
+            }
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed) 
             {
                 for (int i = 0; i < 50; i++) {
