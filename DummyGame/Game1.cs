@@ -68,9 +68,15 @@ namespace DummyGame.Android
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed) 
+            {
+                for (int i = 0; i < 50; i++) {
+                    Update
+                    System.Console.WriteLine("I'm in Update and have registered back button pressed.");
+                }
                 Exit();
-
+            }
+             
             // TODO: Add your update logic here
 
             base.Update(gameTime);
