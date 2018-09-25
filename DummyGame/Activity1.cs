@@ -7,7 +7,7 @@ using Android.Util;
 namespace DummyGame.Android
 {
     [Activity(Label = "DummyGame.Android"
-        , MainLauncher = true
+        , MainLauncher = false
         , Icon = "@drawable/icon"
         , Theme = "@style/Theme.Splash"
         , AlwaysRetainTaskState = true
